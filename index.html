@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+	<head id="head" class="head">
+		<title>Book Store</title>
+		<link href="mystyle.css" rel="stylesheet" type="text/css">
+		<script src="javascript.js"></script>
+	</header>
+
+	<body onload="StartTimer(); removeRemove(); parse(); updatePrice();  ">
+	
+		
+ <button id="price" onclick=modal()>Cart($0)</button>
+	 	<div id="fadeMe">
+	 		<div id="modal">
+	 			<div><button id="exitbutton" onclick=exit()>Exit</button></div>
+	 			<div><button id="checkout" onclick=confirm()>CheckOut</button></div>
+	 			<div id="modalContent">
+	 				<div id="CartBox1"></div> 
+	 				<div id="CartBox2"></div>
+	 				<div id="CartClothes1"></div>
+	 				<div id="CartClothes2"></div>
+	 				<div id="CartJeans"></div>
+	 				<div id="CartKeyboard"></div>
+	 				<div id="CartKeyboardCombo"></div>
+	 				<div id="CartMice"></div>
+	 				<div id="CartPC1"></div>
+	 				<div id="CartPC2"></div>
+	 				<div id="CartPC3"></div>
+	 				<div id="CartTent"></div>	
+	 				<div id="totalPrice"></div>
+	 			</div>
+	 		</div>
+	 	</div>
+	 	<div id="header" class="header">
+	 		<logo role="logo"><div id ="logo" class="logo"><img src="products\UBClogo.png" width="250" height="200"></div></logo>
+	 		<welcomeBanner role="welcomeBanner"><div id="welcomeBanner" class="welcomeBanner"><img src="products\welcomeImage.png" width="750" height="200"></div></welcomeBanner>
+		</div>
+	 
+	 	<div id="mainContent" class="mainContent">
+	 			
+	 		<div id="navigationMenu" class="navigation">
+	 			<navigationMenu role="navigationMenu">
+	  				<ul>
+		      			<div class="Icon"><a href="allItems.htm" title="All Items"><h3>All Items</h3></a></div>
+		      			<div class="Icon"><a href="books.htm" title="Books"><h3>Books</h3></a></div>
+		      			<div class="Icon"><a href="clothing.htm" title="Clothing"><h3>Clothing</h3></a></div>
+		      			<div class="Icon"><a href="tech.htm" title="Tech"><h3>Tech</h3></a></div>
+		      			<div class="Icon"><a href="gifts.htm" title="Gifts"><h3>Gifts</h3></a></div>
+		      			<div class="Icon"><a href="stationary.htm" title="Stationary"><h3>Stationary</h3></a></div>
+		      			<div class="Icon"><a href="supplies.htm" title="Stationary"><h3>Supplies</h3></a></div>    
+	   				</ul>
+	 			</navigationMenu>
+	 		</div>
+	 		
+	 		<div id="productList" class="productList">
+		 	 		<div class="first3">
+		  				<div id ="Box1" class="product">
+		  					<div>							
+								<div id=cart><img src="cart.png" width="150" height="130"></div>
+								<b1><button  onclick=addToCart("Box1")>Add</button></b1>
+								<b2 class="remove" id="Box1remove"><button onclick=removeFromCart("Box1")>Remove</button></b2>
+	 						</div>
+		  					<p class="Box1Price">$10</p>
+		  					<img src="products\Box1_$10.png" width="150" height="150"> 
+		  					<h2> Box 1 </h2>
+		  				</div>
+		  				<div id ="Box2" class="product">
+		  					<div>
+								<div id=cart><img src="cart.png" width="150" height="130"></div>
+								<b1><button onclick=addToCart("Box2")>Add</button></b1>
+								<b2 class="remove" id="Box2remove"><button onclick=removeFromCart("Box2")>Remove</button></b2>
+	 						</div>
+		  					<p class="itemP">$5</p>
+		  					<img src="products\Box2_$5.png" width="150" height="150">
+		  					<h2> Box 2 </h2>
+		  				</div>
+		  				<div id ="Clothes1" class="product">
+		  					<div>
+								<div id=cart><img src="cart.png" width="150" height="130"></div>
+								<b1><button onclick=addToCart("Clothes1")>Add</button></b1>
+								<b2 class="remove" id="Clothes1remove"><button onclick=removeFromCart("Clothes1")>Remove</button></b2>
+	 						</div>
+		  					<p class="itemP">$20</p>
+		  					<img src="products\Clothes1_$20.png" width="150" height="150">
+		  					<h2> Clothes 1 </h2>
+		  				</div>
+		  			</div>
+		  			<div class="second3">
+		  				<div id ="Clothes2" class="product">
+		  					<div>
+								<div id=cart><img src="cart.png" width="150" height="130"></div>
+								<b1><button onclick=addToCart("Clothes2")>Add</button></b1>
+								<b2 class="remove" id="Clothes2remove"><button onclick=removeFromCart("Clothes2")>Remove</button></b2>
+	 						</div>
+		  				    <p class="itemP">$30</p>
+		  					<img src="products\Clothes2_$30.png" width="150" height="150">
+		  					<h2> Clothes 2 </h2>
+		  				</div>
+		  				<div id ="Jeans" class="product">
+		  					<div>
+								<div id=cart><img src="cart.png" width="150" height="130"></div>
+								<b1><button onclick=addToCart("Jeans")>Add</button></b1>
+								<b2 class="remove" id="Jeansremove"><button onclick=removeFromCart("Jeans")>Remove</button></b2>
+	 						</div>
+		  					<p class="itemP">$50</p>
+		  					<img src="products\Jeans_$50.png" width="150" height="150">
+		  					<h2> Jeans </h2>
+		  				</div>
+		  				<div id ="Keyboard" class="product">
+		  					<div>
+								<div id=cart><img src="cart.png" width="20" height="130"></div>
+								<b1><button onclick=addToCart("Keyboard")>Add</button></b1>
+								<b2 class="remove" id="Keyboardremove"><button onclick=removeFromCart("Keyboard")>Remove</button></b2>
+	 						</div>
+		  					<p class="itemP">$21</p>
+		  					<img src="products\Keyboard_$20.png" width="150" height="150">
+		  					<h2> Keyboard </h2>
+		  				</div>
+		  			</div>
+		  			<div class="third3">
+		  				<div id ="KeyboardCombo" class="product">
+		  					<div>
+								<div id=cart><img src="cart.png" width="150" height="130"></div>
+								<b1><button onclick=addToCart("KeyboardCombo")>Add</button></b1>
+								<b2 class="remove" id="KeyboardComboremove"><button onclick=removeFromCart("KeyboardCombo")>Remove</button></b2>
+	 						</div>
+		  				    <p class="itemP">$40</p>
+		  					<img src="products\KeyboardCombo_$40.png" width="150" height="150">
+		  					<h2> Keyboard Combo </h2>
+		  				</div>
+		  				<div id ="Mice" class="product">
+		  					<div>
+								<div id=cart><img src="cart.png" width="150" height="130"></div>
+								<b1><button onclick=addToCart("Mice")>Add</button></b1>
+								<b2 class="remove" id="Miceremove"><button onclick=removeFromCart("Mice")>Remove</button></b2>
+	 						</div>
+		  				    <p class="itemP">$20</p>
+		  					<img src="products\Mice_$20.png" width="150" height="150">
+		  					<h2> Mice </h2>
+		  				</div>
+		  				<div id ="PC1" class="product">
+		  					<div>
+								<div id=cart><img src="cart.png" width="150" height="130"></div>
+								<b1><button onclick=addToCart("PC1")>Add</button></b1>
+								<b2 class="remove" id="PC1remove"><button onclick=removeFromCart("PC1")>Remove</button></b2>
+	 						</div>
+		  					<p class="itemP">$350</p>
+		  					<img src="products\PC1_$350.png" width="150" height="150">
+		  					<h2> PC1 </h2>
+		  				</div>
+		  			</div>
+		  			<div class="last3">
+		  				<div id ="PC2" class="product">
+		  					<div>
+								<div id=cart><img src="cart.png" width="150" height="130"></div>
+								<b1><button onclick=addToCart("PC2")>Add</button></b1>
+								<b2 class="remove" id="PC2remove"><button onclick=removeFromCart("PC2")>Remove</button></b2>
+	 						</div>
+		  				    <p class="itemP">$400</p>
+		  					<img src="products\PC2_$400.png" width="150" height="150">
+		  					<h2> PC2 </h2>
+		  				</div>
+		  				<div id ="PC3" class="product">
+		  					<div>
+								<div id=cart><img src="cart.png" width="150" height="130"></div>
+								<b1><button onclick=addToCart("PC3")>Add</button></b1>
+								<b2 class="remove" id="PC3remove"><button onclick=removeFromCart("PC3")>Remove</button></b2>
+	 						</div>
+		  					<p class="itemP">$300</p>
+		  					<img src="products\PC3_$300.png" width="150" height="150">
+		  					<h2> PC3 </h2>
+		  				</div>
+		  				<div id ="Tent" class="product">
+		  					<div>
+								<div id=cart><img src="cart.png" width="150" height="130"></div>
+								<b1><button onclick=addToCart("Tent")>Add</button></b1>
+								<b2 class="remove" id="Tentremove"><button onclick=removeFromCart("Tent")>Remove</button></b2>
+	 						</div>
+		 					<p class="itemP">$100</p>
+		 					<img src="products\Tent_$100.png" width="150" height="150">
+		  				<h2> Tent </h2>
+			  			</div>
+		  			</div>
+	  		</div>
+	  	
+	  	</div>
+	  	<div class="showCart">
+			<button onclick=showCart()>Show Cart</button>
+		</div>
+	</body>
+	
+	<footer role="footer">
+		<div id ="footer" class="footer">
+			<h4> UBC Bookstore </h4>
+			<p>  Contact Number: 000-000-0000 </p>
+			<h4 id=timer></h4>
+	    </div>
+	</footer>
+</html>

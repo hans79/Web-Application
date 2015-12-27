@@ -1,0 +1,224 @@
+body{
+        width:1000px;
+        margin:0 auto;
+        position: relative;
+    }
+.header{
+	  width:100%; float:left; 
+}
+.showCart {
+	margin:0;
+	position:absolute;
+	margin-top: 700px;
+	margin-left: 50px;
+
+}
+
+.showCart button{
+    background-color: #000000;
+    color: #FFFFFF;
+    float: right;
+    padding: 10px;
+	border-radius: 10px;
+    width: 200px;
+    
+}
+.logo  img{
+ margin-left:40px; margin-top:30px; padding:0; max-width:30%; float:left; overflow:hidden; 
+ }
+
+.welcomeBanner img{
+ margin-bottom:10px; margin-top:30px;margin-left:10px; max-width:70%; float:right; overflow:hidden;
+
+}
+
+.mainContent{
+	margin-top:10px; padding:0; width:100%; float:left;
+}
+
+.navigation{
+  margin-top:10px; padding:0; max-width:30%; float: left; 
+}
+.Icon{
+	margin: 0 0 10px 0;
+	background-color:CadetBlue;
+	height: 3em;
+	width: 15.6em;
+	position:relative;
+	}
+.Icon h3{
+	margin:0;
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-right: -50%;
+	transform:translate(-50%,-50%)
+	}
+
+.Icon:hover{
+	background-color:black;
+	}
+.Icon h3:hover{
+	font-style: oblique;
+	color: red;
+	}
+
+.productList{
+ margin-right:10px; margin-top:10px; padding:0; max-width:70%; float:right;
+}
+.first3{
+ margin:0; padding:0; width:100%; float:left;
+}
+.product{
+  margin-top:15.5px; padding:0; width:33%; float:left;
+  opacity: 1;
+}
+.product:hover{
+background-color:grey;
+}
+
+.product img{
+   position:relataive;
+   text-align:center;
+   display:block;
+   margin:auto;
+   margin-top:30px;
+ }
+.product #cart{
+	
+	position:absolute;
+	background-color:grey;
+	opacity: 0.5;
+	margin-left:40px;
+	visibility: hidden;
+	}
+.product:hover #cart{
+	
+	visibility: visible;
+	}
+.product h2{
+text-align: center;
+   }
+.product p{
+    position:absolute;
+    margin-left:100px;
+    margin-top: 161px;
+    visibility:hidden;
+	color:white;
+	font-weight: 900;
+	background-color: grey;
+  }
+.product:hover p {
+  visibility: visible;
+  opacity: 1;
+  
+}
+
+
+
+.second3{
+ margin:0; padding:0; width:100%; float:left;
+}
+
+
+.third3{
+ margin:0; padding:0; width:100%; height:25% float:left;
+}
+
+.last3{
+ margin:0; padding:0; width:100%; float:left;
+}
+
+.product b1{
+    position:absolute;
+    margin-left:50px;
+    margin-top: 90px;
+	font-weight: 900;
+	visibility: hidden;
+  }
+.product b2{
+    position:absolute;
+    margin-left:120px;
+    margin-top: 90px;
+	font-weight: 900;
+	visibility: hidden;
+  }
+ 
+.product:hover b1{
+
+	visibility: visible;
+  }
+.product:hover b2{
+
+	visibility: visible;
+  }
+.product b1 button{
+	background-color:green;
+	color: #FFFFFF;
+}
+
+.product b2 button{
+	background-color:red;
+	
+	color: #FFFFFF;
+}
+footer{
+ margin-left:10px; margin-top:10px; padding:0; width:1000px; float:left; 
+}
+
+footer h4{
+ text-align: right;
+ 
+}
+
+footer p{
+	text-align: right; 
+}
+
+
+
+#fadeMe {
+  background:rgba(0,0,0,0.5);
+  width:      100%;
+  height:     100%; 
+  z-index:    10;
+  top:        0; 
+  left:       0; 
+  position:   fixed; 
+  visibility: hidden;
+}
+#modal {
+    background:rgba(192,192,192,1);
+    width: 500px;
+    height: 300px;
+    margin:0;
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-right: -50%;
+	transform:translate(-50%,-50%);
+	-moz-box-shadow: 0 0 5px #000;
+	-webkit-box-shadow: 0 0 5px #000;
+	-box-shadow: 0 0 5px #000;
+    }
+
+#modalContent {
+	margin:0;
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-right: -50%;
+	transform:translate(-50%,-50%);
+	}
+
+#price {
+	margin-left: 937px;
+	}
+	
+#exitbutton{
+	margin-left:461px;
+	}
+#checkout{
+	margin-top:258px;
+	margin-left:425px;
+	}

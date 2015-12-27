@@ -1,0 +1,9 @@
+{
+    "name": "assignment-5",
+    "description": "Assignment 5",
+    "version": "0.0.1",
+    "private": true,
+    "dependencies": {
+        "express": "3.x"
+    }
+}
